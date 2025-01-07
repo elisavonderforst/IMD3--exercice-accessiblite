@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <title>Accessibilité formulaire</title>
@@ -37,84 +37,123 @@
         <div class="col-12">
           <div class="radio-inputs-wrapper">
             <div>
-              <input type="radio" name="gender" value="madam" /><span
-                class="label"
-                >Madame</span
-              >
+              <input
+                type="radio"
+                name="gender"
+                value="madam"
+                id="label-gender-madam"
+                aria-required="true"
+              />
+              <label class="label" for="label-gender-madam">Madame</label>
             </div>
             <div>
-              <input type="radio" name="gender" value="mister" /><span
-                class="label"
-                >Monsieur</span
-              >
+              <input
+                type="radio"
+                name="gender"
+                value="mister"
+                id="label-gender-mister"
+                aria-required="true"
+              /><label class="label" for="label-gender-mister">Monsieur</label>
             </div>
             <div>
-              <input type="radio" name="gender" value="neither" /><span
-                class="label"
-                >Ne se prononce pas</span
+              <input
+                type="radio"
+                name="gender"
+                value="neither"
+                id="label-gender-neither"
+                aria-required="true"
+              /><label class="label" for="label-gender-neither"
+                >Ne se prononce pas</label
               >
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-12">
           <div class="label-wrapper">
-            <span class="label">Votre nom</span>
+            <label for="label-lastName" class="label">Votre nom</label>
             <span class="mandatory">*</span>
           </div>
-          <input class="input" type="text" placeholder="Nom" name="lastName" />
+          <input
+            class="input"
+            type="text"
+            placeholder="Nom"
+            name="lastName"
+            id="label-lastName"
+            aria-required="true"
+          />
         </div>
         <div class="col-sm-6 col-12">
           <div class="label-wrapper">
-            <span class="label">Votre prénom</span>
-            <span class="mandatory">*</span>
+            <label for="label-firstName" class="label">Votre prénom</label>
+            <p class="mandatory">*</p>
           </div>
           <input
             class="input"
             type="text"
             placeholder="Prénom"
             name="firstName"
+            id="label-firstName"
+            aria-required="true"
           />
         </div>
         <div class="col-sm-6 col-12">
           <div class="label-wrapper">
-            <span class="label">Votre email</span>
-            <span class="mandatory">*</span>
+            <label for="label-email" class="label">Votre email</label>
+            <p class="mandatory">*</p>
           </div>
-          <input class="input" type="text" placeholder="Email" name="email" />
+          <input
+            class="input"
+            type="text"
+            placeholder="Email"
+            name="email"
+            id="label-email"
+          />
         </div>
         <div class="col-sm-6 col-12">
           <div class="label-wrapper">
-            <span class="label">Votre mot de passe</span>
-            <span class="mandatory">*</span>
+            <label for="label-password" class="label">Votre mot de passe</label>
+            <p class="mandatory">*</p>
           </div>
 
-          <input class="input" type="text" placeholder="****" name="password" />
+          <input
+            class="input"
+            type="text"
+            placeholder="****"
+            name="password"
+            id="label-password"
+            aria-required="true"
+          />
         </div>
         <div class="col-sm-6 col-12">
           <div class="label-wrapper">
-            <span class="label">Votre année de naissance</span>
+            <label for="label-birthYear" class="label"
+              >Votre année de naissance</label
+            >
           </div>
           <input
             class="input"
             type="text"
             placeholder="Année de naissance"
             name="birthYear"
+            id="label-birthYear"
+            aria-required="true"
           />
         </div>
         <div class="col-sm-6 col-12">
           <div class="label-wrapper">
-            <span class="label">Votre adresse</span>
+            <label for="label-adresse" class="label">Votre adresse</label>
           </div>
           <input
             class="input"
             type="text"
             placeholder="Adresse"
             name="adress"
+            id="label-adresse"
           />
         </div>
 
         <div class="col-12">
-          <span class="btn submit-btn">Soumettre le formulaire</span>
+          <button class="btn submit-btn">Soumettre le formulaire</button>
         </div>
       </form>
     </main>
